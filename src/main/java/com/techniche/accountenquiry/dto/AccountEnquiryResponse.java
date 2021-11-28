@@ -1,9 +1,11 @@
 package com.techniche.accountenquiry.dto;
 
+import java.math.BigDecimal;
+
 public class AccountEnquiryResponse {
     private String accountNumber;
     private String accountName;
-    private String accountBalance;
+    private BigDecimal accountBalance;
     private String responseCode;
     private String responseMessage;
 
@@ -39,11 +41,11 @@ public class AccountEnquiryResponse {
         this.accountName = accountName;
     }
 
-    public String getAccountBalance() {
+    public BigDecimal getAccountBalance() {
         return accountBalance;
     }
 
-    public void setAccountBalance(String accountBalance) {
+    public void setAccountBalance(BigDecimal accountBalance) {
         this.accountBalance = accountBalance;
     }
 

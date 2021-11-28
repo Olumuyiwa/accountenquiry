@@ -1,6 +1,5 @@
 package com.techniche.accountenquiry.repository;
 
-//import com.techniche.accountenquiry.entity.AccountEnquiryEntity;
 import com.techniche.accountenquiry.entity.AccountEnquiryEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;

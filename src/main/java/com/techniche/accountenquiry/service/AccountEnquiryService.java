@@ -9,6 +9,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
+import java.math.BigDecimal;
+
 @Service
 public class AccountEnquiryService {
     @Autowired
@@ -21,7 +23,7 @@ public class AccountEnquiryService {
         String responseCode   = "";
         String responseMessage = "";
         String acctName="";
-        String acctBal="";
+        BigDecimal acctBal=null;
         String acctNo ="";
         System.out.println("Inside the service accountEnquiryRequest = " + accountEnquiryRequest);
         AccountEnquiryResponse accountEnquiryResponse = new AccountEnquiryResponse();
@@ -32,7 +34,7 @@ public class AccountEnquiryService {
             responseCode   = "901";
             responseMessage = "Account does not exist";
             acctName="";
-            acctBal="";
+            acctBal=null;
             acctNo ="";
         }
         else{

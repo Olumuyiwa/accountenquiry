@@ -3,6 +3,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.math.BigDecimal;
 
 @Entity
 //@Table(name = "tbaadm.gam")
@@ -20,7 +21,7 @@ public class AccountEnquiryEntity {
     @Column(name = "acct_name")
     private String accountName;
     @Column(name = "clr_bal_amt")
-    private String accountBalance;
+    private BigDecimal accountBalance;
 
 
     public String getAcid() {
@@ -57,11 +58,11 @@ public class AccountEnquiryEntity {
                 '}';
     }
 
-    public String getAccountBalance() {
+    public BigDecimal getAccountBalance() {
         return accountBalance;
     }
 
-    public void setAccountBalance(String accountBalance) {
+    public void setAccountBalance(BigDecimal accountBalance) {
         this.accountBalance = accountBalance;
     }
 
