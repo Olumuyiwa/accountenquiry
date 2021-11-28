@@ -54,6 +54,7 @@ public class AccountEnquiryController {
     @PostMapping("/accountBalance")
     public ResponseEntity<AccountEnquiryResponse> getAccountBalance(@RequestBody AccountEnquiryRequest accountEnquiryRequest) {
         logger.info("Executing account validation log");
+        System.out.println("Inside the controller accountEnquiryRequest = " + accountEnquiryRequest);
         AccountEnquiryResponse response = accountEnquiryService.fetchCustomerDetailsByAccountNumber(accountEnquiryRequest);
         return new ResponseEntity<AccountEnquiryResponse>(response, HttpStatus.OK);
     }

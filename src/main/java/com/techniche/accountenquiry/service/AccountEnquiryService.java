@@ -2,7 +2,7 @@ package com.techniche.accountenquiry.service;
 
 import com.techniche.accountenquiry.dto.AccountEnquiryRequest;
 import com.techniche.accountenquiry.dto.AccountEnquiryResponse;
-import com.techniche.accountenquiry.entity.AccountEnquiryEntity;
+import com.techniche.accountenquiry.entity.AccountEnquiryEntity2;
 import com.techniche.accountenquiry.repository.AccountEnquiryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.slf4j.Logger;
@@ -23,9 +23,9 @@ public class AccountEnquiryService {
         String acctName="";
         String acctBal="";
         String acctNo ="";
-
+        System.out.println("Inside the service accountEnquiryRequest = " + accountEnquiryRequest);
         AccountEnquiryResponse accountEnquiryResponse = new AccountEnquiryResponse();
-        AccountEnquiryEntity accountEnquiryEntity =
+        AccountEnquiryEntity2 accountEnquiryEntity =
                 accountEnquiryRepository.fetchCustomerDetailsByAccountNumber(accountEnquiryRequest.getAccountNumber());
 
         if(accountEnquiryEntity==null){
