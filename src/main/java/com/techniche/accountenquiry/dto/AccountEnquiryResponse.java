@@ -8,7 +8,7 @@ public class AccountEnquiryResponse {
     private BigDecimal accountBalance;
     private String responseCode;
     private String responseMessage;
-
+//get and set methods
     public String getResponseCode() {
         return responseCode;
     }

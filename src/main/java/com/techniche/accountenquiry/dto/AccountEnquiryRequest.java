@@ -2,7 +2,7 @@ package com.techniche.accountenquiry.dto;
 
 public class AccountEnquiryRequest {
     private String accountNumber;
-
+//get and set methods
     public String getAccountNumber() {
         return accountNumber;
     }
